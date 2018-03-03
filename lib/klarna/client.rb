@@ -1,5 +1,6 @@
 require 'klarna/methods/get_addresses'
 require 'klarna/methods/reserve_amount'
+require 'klarna/methods/add_invoice'
 require 'klarna/methods/activate'
 
 module Klarna
@@ -28,6 +29,14 @@ module Klarna
 
     def self.reserve_amount(params)
       new.reserve_amount(params)
+    end
+
+    def add_invoice(params)
+      call_method(Klarna::Methods::AddInvoice, params)
+    end
+
+    def self.add_invoice(params)
+      new.add_invoice(params)
     end
 
     def activate(params)
