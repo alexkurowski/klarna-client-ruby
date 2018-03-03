@@ -20,6 +20,7 @@ Or install it yourself as:
 
   * [get_addresses](https://integration.klarna.com/en/api/advanced-integration/functions/getaddresses)
   * [reserve_amount](https://integration.klarna.com/en/api/advanced-integration/functions/reserveamount/)
+  * add_invoice
   * [activate](https://integration.klarna.com/en/api/advanced-integration/functions/activate)
 
 ## Usage
