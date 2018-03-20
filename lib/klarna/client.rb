@@ -2,6 +2,7 @@ require 'klarna/methods/get_addresses'
 require 'klarna/methods/reserve_amount'
 require 'klarna/methods/add_invoice'
 require 'klarna/methods/activate'
+require 'klarna/methods/activate_invoice'
 
 module Klarna
   class Client
@@ -45,6 +46,14 @@ module Klarna
 
     def self.activate(params)
       new.activate(params)
+    end
+
+    def activate_invoice(params)
+      call_method(Klarna::Methods::ActivateInvoice, params)
+    end
+
+    def self.activate_invoice(params)
+      new.activate_invoice(params)
     end
 
     private
